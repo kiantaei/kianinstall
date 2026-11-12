@@ -3,6 +3,18 @@
 
 <!-- </div> -->
 # Arch Installer
+
+> **Kian OS fork notice (2026-11-12).** This repository is a fork of
+> [archlinux/archinstall](https://github.com/archlinux/archinstall) maintained
+> for [**Kian OS**](https://github.com/kiantaei/Kian-OS). The guided installer
+> ships under the command name **`kianinstall`** (`archinstall` is kept as an
+> alias); the installer logic itself is unmodified upstream code. This fork
+> is GPL-3.0-only like the upstream project — see [LICENSE](LICENSE); all
+> credit for the original installer goes to the Arch Linux archinstall
+> contributors. On Kian OS media the fork is vendored at `/opt/kianinstall`
+> and launched through `/usr/local/bin/kianinstall`; `sudo kian-install`
+> delegates to it.
+
 [![Lint Python and Find Syntax Errors](https://github.com/archlinux/archinstall/actions/workflows/flake8.yaml/badge.svg)](https://github.com/archlinux/archinstall/actions/workflows/flake8.yaml)
 
 Just another guided/automated [Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux) installer with a twist.

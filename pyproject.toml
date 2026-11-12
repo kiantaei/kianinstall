@@ -3,16 +3,17 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "archinstall"
-version = "4.5"
-description = "Arch Linux installer - guided, templates etc."
+name = "kianinstall"
+version = "4.5+kian"
+description = "Kian OS installer - guided, templates etc. (fork of Arch Linux's archinstall)"
 authors = [
     {name = "Anton Hvornum", email = "anton@hvornum.se"},
+    {name = "kiantaei", email = "kiantaei2013@gmail.com"},
 ]
 license = "GPL-3.0-only"
 readme = "README.md"
 requires-python = ">=3.14"
-keywords = ["linux", "arch", "archinstall", "installer"]
+keywords = ["linux", "arch", "archinstall", "kian", "kianinstall", "installer"]
 classifiers = [
     "Programming Language :: Python :: 3.14",
     "Operating System :: POSIX :: Linux",
@@ -29,7 +30,8 @@ dependencies = [
 [project.urls]
 Home = "https://archlinux.org"
 Documentation = "https://archinstall.readthedocs.io/"
-Source = "https://github.com/archlinux/archinstall"
+Source = "https://github.com/kiantaei/kianinstall"
+Upstream = "https://github.com/archlinux/archinstall"
 
 [project.optional-dependencies]
 log = ["systemd_python>=235"]
@@ -45,6 +47,7 @@ dev = [
 doc = ["sphinx"]
 
 [project.scripts]
+kianinstall = "archinstall.main:main"
 archinstall = "archinstall.main:main"
 
 [tool.setuptools.dynamic]
